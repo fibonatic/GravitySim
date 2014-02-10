@@ -239,9 +239,9 @@ function SunEarthMoon()
 	var vEarth = 29.78e3;
 	var smaMoon = 0.3844e9;
 	var smaEarth = 1.496e11;
-    objects[0] = new Thing(1.9891e30, 0, 0, 0, 0, false, 'yellow');
-    objects[1] = new Thing(5.9726e24, smaEarth, 0, 0, vEarth, false, 'green');
-    objects[2] = new Thing(7.342e22, smaEarth - smaMoon, 0, 0, vEarth - vMoon, false, '#6A6A87');
+    objects[0] = new Thing(1.9891e30, 0, 0, 0, 0, 1e18, 'yellow');
+    objects[1] = new Thing(5.9726e24, smaEarth, 0, 0, vEarth, 3e15, 'green');
+    objects[2] = new Thing(7.342e22, smaEarth - smaMoon, 0, 0, vEarth - vMoon, 4e14, '#6A6A87');
 }
 function figureEight()
 {
