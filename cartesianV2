@@ -40,7 +40,7 @@ var timeStep = 5e-4;		// Nummerical time step size, which passes each loop.
 var scaleFactor;			// Multiplied by data in rendering to adjust zoom level.
 var path = true;  			// Draw path
 
-var renderId = -1; 			// ID of Thing to put at center of frame.
+var renderId = 1; 			// ID of Thing to put at center of frame.
 
 // Global variables:
 var G;
