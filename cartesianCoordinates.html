@@ -19,7 +19,7 @@ table {
 <body>
 <center>
 <h1>Gravity</h1>
-Zoom: <input type="text" id="scaleMultiplier">
+Zoom: <input type="text" value="1" id="scaleMultiplier">
 <input type="button" id="pause" value="Pause">
 <input type="button" id="play" value="Play">
 <div></div>
@@ -84,7 +84,7 @@ function main()
 		}
 	};
 	
-	run = setInterval('loop()',runSpeed);
+	run = setInterval(loop, runSpeed);
 	
 	document.getElementById('pause').onclick = function() // Detecting clicking on pause button.
 	{
@@ -98,7 +98,7 @@ function main()
 	{
 		if(!running)
 			{
-				run = setInterval('loop()',runSpeed); // Restart simulation.
+				run = setInterval(loop, runSpeed); // Restart simulation.
 				running = true;
 			}
 	};
